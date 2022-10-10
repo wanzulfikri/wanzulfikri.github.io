@@ -1,0 +1,32 @@
+---
+---
+
+// .criticism {
+//     h2 {
+//         text-align: center;
+//         font-weight: 500;
+//     }
+
+//    background-color: #f9cfcf;
+//    padding: 10px;
+//    border-radius: 5px;
+// }
+
+// .criticism-line {
+//         height: 0;
+//         border-top: 1px solid rgba(0, 0, 0, 0.1);
+//         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+//         border-left: 0px solid white;
+//         border-right: 0px solid white;
+//         margin-bottom: 30px;
+//         // width: 50%;
+// }
+
+.email {
+    &:hover {
+        text-decoration: none;
+      }
+   color: #111;
+}
+
+@import "minima";
