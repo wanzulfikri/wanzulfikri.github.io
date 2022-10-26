@@ -1,31 +1,38 @@
 ---
 ---
 
+#newsletter {
+  text-align: center;
+  p {
+    margin-bottom: 10px;
+  }
+    h2 {
+        text-align: center;
+        font-weight: 500;
+    }
 
+  input[type="submit"]:hover {
+    cursor: pointer;
+  }
 
-// .criticism {
-//     h2 {
-//         text-align: center;
-//         font-weight: 500;
-//     }
+   background-color: #eeeefff3;
+   padding: 10px;
+   border-radius: 5px;
+}
 
-//    background-color: #f9cfcf;
-//    padding: 10px;
-//    border-radius: 5px;
-// }
+.newsletter-line {
 
-// .criticism-line {
-//         height: 0;
-//         border-top: 1px solid rgba(0, 0, 0, 0.1);
-//         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-//         border-left: 0px solid white;
-//         border-right: 0px solid white;
-//         margin-bottom: 30px;
-//         // width: 50%;
-// }
+        height: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        border-left: 0px solid white;
+        border-right: 0px solid white;
+        margin-bottom: 30px;
+}
 
-hr {
+hr .custom-line {
   margin-bottom: 15px;
+  border-top: 1px solid #e8e8e8;
 }
 
 .email {
@@ -36,3 +43,4 @@ hr {
 }
 
 @import "minima";
+

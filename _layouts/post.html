@@ -29,40 +29,29 @@ layout: default
   <div class="post-content e-content mmm" itemprop="articleBody">
     {{ content }}
   </div>
-  <!-- <hr class="criticism-line"> -->
-  <!-- <div class="criticism"> -->
 
-    <!-- <h2>The Criticism Beggar</h2>
-  {{
-"
-**One-Liner**
-    
-Please criticise. No-holds-barred. [Here](#email) maybe.
-    
-**Long-Ass**
-    
-Are you annoyed or even seething from seeing the dumbness strewn about in this article? Or have you wasted your time reading this monumental PoS, and you insist I refund your lost time down to every single millisecond?
-    
-1) I'm not a time wizard. No time refund.
-    
-2) Please take advantage of your rage and assert your superiority over me by criticising anything you want. No-holds-barred is the minimum. This is a criticism-inclusive zone; make it brutal if that's your style.
-    
-Seriously: I've been a habitual compliment fisher and criticism evader for all my life. You are doing me a huge favour by being generous with your honest criticisms and stingy with your compliments.
-    
-It's also nice if the criticisms are constructive, but I've already asked too much from you so please ignore that request if it's preventing you from criticising.
-    
-Leave your criticisms here. Or write it anywhere you want, and if you have the time, let me know where; criticisms are more fun when you know the intended recipient gets to see them and be enraged.
-    
-Many thanks for reading this long-ass criticism begging. I won't beg for likes and shares, thank you very much.
-    
-Have a good day and may your life be fulfilling.
+  <hr class="newsletter-line">
 
-###### PS. Hopefully the red background amped your aggression a bit.
-"
-
-    | markdownify }}
-  </div> -->
-
+  <div id="newsletter">
+    <h3>Get blog updates by email.</h3>
+    <form
+    action="https://buttondown.email/api/emails/embed-subscribe/wzwy"
+    method="post"
+    target="popupwindow"
+    onsubmit="window.open('https://buttondown.email/wzwy', 'popupwindow')"
+    class="embeddable-buttondown-form"
+  >
+  <!-- <p>
+    <label for="bd-email">Enter your email</label>
+  </p> -->
+    
+    <input type="email" name="email" id="bd-email" placeholder="enter your email here"/>
+    <input type="submit" value="Subscribe" />
+    <!-- <p>
+      <a href="https://buttondown.email" target="_blank">Thank you to Buttondown.</a>
+    </p> -->
+  </form>
+  </div>
   {%- if site.disqus.shortname -%}
   {%- include disqus_comments.html -%}
   {%- endif -%}
